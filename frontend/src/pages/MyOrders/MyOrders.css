@@ -1,1 +1,177 @@
+.my-orders-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.my-orders-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #f86f03;
+  background: white;
+  color: #f86f03;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-button.active {
+  background: #f86f03;
+  color: white;
+}
+
+.tab-button:hover {
+  background: #f86f03;
+  color: white;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-number {
+  font-weight: 600;
+  color: #333;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status-badge.diproses {
+  background: #ffe58f;
+  color: #ad8b00;
+}
+
+.status-badge.dikirim {
+  background: #91d5ff;
+  color: #0050b3;
+}
+
+.status-badge.selesai {
+  background: #b7eb8f;
+  color: #389e0d;
+}
+
+.order-products {
+  margin-top: 10px;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.order-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #555;
+}
+
+.order-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.detail-button, .track-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.detail-button {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.track-button {
+  background: #f86f03;
+  color: white;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-products {
+  margin-top: 15px;
+}
+
+.modal-footer {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #f86f03;
+}
+
+.close-button {
+  margin-top: 20px;
+  background: #f86f03;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.skeleton-loader {
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+  padding: 50px 0;
+}
 
